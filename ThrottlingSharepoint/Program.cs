@@ -26,23 +26,25 @@ namespace ThrottlingSharepoint
             ClientContext sharepointContext = SharepointConnection();
             if(sharepointContext == null)
             {
+                Console.WriteLine("The script has ended. Press any key to stop...");
+                Console.ReadKey();
                 return;
             }
             Console.WriteLine("Sharepoint Authenticated\n");
             var clientCredentials = CRMConnection();
 
-            string text = System.IO.File.ReadAllText("C:/Users/utgoswam/source/repos/ThrottlingSharepoint/ThrottlingSharepoint/fileNumber.txt");
+            string text = System.IO.File.ReadAllText("./fileNumber.txt");
             int fileNumber = Convert.ToInt32(text);
 
             // create files to log successful and failed record movements
-            successFile = System.IO.File.Create(string.Format("C:/Users/utgoswam/source/repos/ThrottlingSharepoint/ThrottlingSharepoint/success{0}.xml", fileNumber));
+            successFile = System.IO.File.Create(string.Format("./success{0}.xml", fileNumber));
             successWriter = new System.Xml.Serialization.XmlSerializer(typeof(Success));
-            failureFile = System.IO.File.Create(string.Format("C:/Users/utgoswam/source/repos/ThrottlingSharepoint/ThrottlingSharepoint/failures{0}.xml", fileNumber));
+            failureFile = System.IO.File.Create(string.Format("./failures{0}.xml", fileNumber));
             failureWriter = new System.Xml.Serialization.XmlSerializer(typeof(Failure));
-            workingFile = System.IO.File.Create(string.Format("C:/Users/utgoswam/source/repos/ThrottlingSharepoint/ThrottlingSharepoint/working{0}.xml", fileNumber));
+            workingFile = System.IO.File.Create(string.Format("./working{0}.xml", fileNumber));
             workingWriter = new System.Xml.Serialization.XmlSerializer(typeof(Success));
 
-            System.IO.File.WriteAllText("C:/Users/utgoswam/source/repos/ThrottlingSharepoint/ThrottlingSharepoint/fileNumber.txt", Convert.ToString(fileNumber + 1));
+            System.IO.File.WriteAllText("./fileNumber.txt", Convert.ToString(fileNumber + 1));
 
             // For Dynamics 365 Customer Engagement V9.X, set Security Protocol as TLS12
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
@@ -131,7 +133,8 @@ namespace ThrottlingSharepoint
                             }
                             // increasing the count irrespective of failure because files might have been moved
                             count++;
-                            if (count == limitRecords) break;
+                            break;
+                            //if (count == limitRecords) break;
                         }
                     }
                 }
@@ -306,7 +309,7 @@ namespace ThrottlingSharepoint
 
         private static void ReadConfigFile()
         {
-            using (StreamReader r = new StreamReader("C:/Users/utgoswam/source/repos/ThrottlingSharepoint/ThrottlingSharepoint/config.json"))
+            using (StreamReader r = new StreamReader("./config.json"))
             {
                 string json = r.ReadToEnd();
                 Config items = JsonConvert.DeserializeObject<Config>(json);
