@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Failure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <entityRef>
+    <Id>e81f7b8b-3c52-ea11-a820-000d3ac35955</Id>
+    <LogicalName>contact</LogicalName>
+    <Name>Utkarsha6128 Doe</Name>
+    <KeyAttributes />
+    <ExtensionData />
+  </entityRef>
+  <errorMessage>The remote server returned an error: (503) Server Unavailable.</errorMessage>
+</Failure><?xml version="1.0"?>
+<Failure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <entityRef>
+    <Id>c0754d5f-ea52-ea11-a820-000d3ac35955</Id>
+    <LogicalName>contact</LogicalName>
+    <Name>Utkarsha8146 Doe</Name>
+    <KeyAttributes />
+    <ExtensionData />
+  </entityRef>
+  <errorMessage>The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.</errorMessage>
+</Failure><?xml version="1.0"?>
+<Failure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <entityRef>
+    <Id>7f0375ab-ea52-ea11-a820-000d3ac35955</Id>
+    <LogicalName>contact</LogicalName>
+    <Name>Utkarsha8163 Doe</Name>
+    <KeyAttributes />
+    <ExtensionData />
+  </entityRef>
+  <errorMessage>The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.</errorMessage>
+</Failure><?xml version="1.0"?>
+<Failure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <entityRef>
+    <Id>b907a401-eb52-ea11-a820-000d3ac35955</Id>
+    <LogicalName>contact</LogicalName>
+    <Name>Utkarsha8180 Doe</Name>
+    <KeyAttributes />
+    <ExtensionData />
+  </entityRef>
+  <errorMessage>The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.</errorMessage>
+</Failure>

@@ -1,0 +1,15 @@
+{
+	"crmUrl": "http://aurorav32227.aurorav32227dom.extest.microsoft.com/CITTest",
+	"crmUserName": "administrator",
+	"sharepointUrl": "https://salestiptenant.sharepoint.com/",
+	"sharepointUserEmailID": "CRMSales@SalesTIPtenant.onmicrosoft.com",
+	"entityLogicalName": "account",
+	"numberOfFoldersPerDL": "5",
+	"isThereAnySubsite": "Yes",
+	"subsiteUrl": "/ut5kfolder/",
+	"newDLPrefix": "account",
+	"newDLSuffixNumber": "1",
+	"descriptionOfNewDL": "A new DL to avoid hitting threshold for GET calls",
+	"deleteFilesAfterCopying": "Yes",
+	"maxRecordsToBeMoved": "1000000"
+}

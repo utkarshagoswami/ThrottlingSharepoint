@@ -1,0 +1,15 @@
+1. Store successful moves in a file - add entityLogicalName, EntityID, EntityName - done
+2. Store failures in a file - add entityLogicalName, EntityID, EntityName - done
+3. Don't update if the entity is eccentric
+4. Move of one note is not working fine - done
+5. Catch on exception, reverse the transaction for that record and move onto next record. Store this in "failures" file
+6. Error handling for throttling by sharepoint. Shrepoint sends a 503 error when throttling
+7. Fetch only required columns for sharepointdocumentlocation instead of all
+8. Fetch sharepointdocumentlocation related to only the entityLogicalName given by user instead of fetching all sharepointdocumentlocations
+9. Can we use batch call to update the DLs to save time? How else can we save time?
+10. Update the hardcoded paths for task #1, #2 and config.json file to be relative to the location of exe and test it
+11. Write a script to delete the files if the customer is comfortable
+
+Call on 9968813151 for any doubts
+
+Happy coding!
