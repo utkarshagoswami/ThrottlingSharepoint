@@ -133,8 +133,7 @@ namespace ThrottlingSharepoint
                             }
                             // increasing the count irrespective of failure because files might have been moved
                             count++;
-                            break;
-                            //if (count == limitRecords) break;
+                            if (count == limitRecords) break;
                         }
                     }
                 }

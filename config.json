@@ -1,0 +1,15 @@
+{
+	"crmUrl": "http://abc.crm10.dynamics.com/",
+	"crmUserName": "administrator",
+	"sharepointUrl": "https://abc.sharepoint.com/",
+	"sharepointUserEmailID": "abc@def.onmicrosoft.com",
+	"entityLogicalName": "account",
+	"numberOfFoldersPerDL": "5",
+	"isThereAnySubsite": "Yes",
+	"subsiteUrl": "/subsitefolder/",
+	"newDLPrefix": "account",
+	"newDLSuffixNumber": "1",
+	"descriptionOfNewDL": "A new DL to avoid hitting threshold for GET calls",
+	"deleteFilesAfterCopying": "Yes",
+	"maxRecordsToBeMoved": "1000000"
+}

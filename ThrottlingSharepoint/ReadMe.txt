@@ -20,6 +20,8 @@ Config.json is the file where user can specify the configurations and the userID
 - deleteFilesAfterCopying: Determines if the files are to be moved to a new destination or just copied. The value must be "yes" or "no".
 - maxRecordsToBeMoved: The maximum number of records to be processed for movement. if not specified, the default value is infinite.
 
+Place the config.json file wherever the .exe file is located. The three files containing logs, viz, working.json, failures.json and success.json will also be created at the same place. A sample config.json file can be found here: https://github.com/utkarshagoswami/ThrottlingSharepoint
+
 Algorithm:
 Do Sharepoint auth
 Do CRM Auth
